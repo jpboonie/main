@@ -79,7 +79,7 @@ number = input("enter number: ")
 print("Your phone number is : " + number)
 lang = input("Python or ruby?: ")
 print("You chose : " + lang)
-'''
+
 
 #Questions 6 
 x = input("Number: ")
@@ -96,6 +96,27 @@ if password == "code":
   print("Correct")
 else:
   print("Incorrect")
+'''
+#Question 7 loops
+clist = ['Canada', 'USA', 'Mexico', 'Australia']
+for c in clist:
+  print(c)
 
+clist = ['Canada', 'USA', 'Mexico', 'Australia']
+size = len(clist)
+i=0
 
-#Question 7 
+while i < size:
+  print(clist[i])
+  i = i + 1
+
+#functions
+#!/usr/bin/env python3
+def sum(list):
+  sum = 0
+  for e in list:
+    sum = sum + e
+  return sum
+
+mylist = [1, 2, 3, 4, 5]
+print(sum(mylist))
