@@ -2,7 +2,7 @@ x=5
 y='john'
 print(x)
 print(y)
-
+'''
 #question 1
 print('jacob')
 print("""Here comes my happiness again
@@ -74,3 +74,28 @@ print(r.randrange(0,10))
 print(r.randrange(0,10))
 print(r.randrange(0,10))
 
+#Question 5 
+number = input("enter number: ")
+print("Your phone number is : " + number)
+lang = input("Python or ruby?: ")
+print("You chose : " + lang)
+'''
+
+#Questions 6 
+x = input("Number: ")
+x = int(x)
+
+if x < 0 or x > 10:
+  print("Invalid number")
+else:
+  print("Good choice")
+
+password = input("Password: ")
+
+if password == "code":
+  print("Correct")
+else:
+  print("Incorrect")
+
+
+#Question 7 
