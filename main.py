@@ -120,3 +120,80 @@ def sum(list):
 
 mylist = [1, 2, 3, 4, 5]
 print(sum(mylist))
+
+x = [ (3,6),(4,7),(5,9),(8,4),(3,1)] 
+x.sort()
+print(x)
+
+from operator import itemgetter 
+x.sort(key=itemgetter(1))
+print(x) 
+
+#Range
+x = list(range(1,1001)) 
+print(x) 
+
+x = list(range(1,1001)) 
+print(min(x)) 
+print(max(x)) 
+
+x = list(range(1,11,2)) 
+y = list(range(2,11,2)) 
+print(x) 
+print(y) 
+
+#Dictionary
+words = {}
+words["US"] = "United States" 
+words["UK"] = "United Kingdom" 
+words["AUS"] = "Australia" 
+for key, value in words.items():  
+  print(key + " = " + value) 
+
+
+#Day 2 Lecture 
+a=2 
+print('id(2) =', id(2))
+
+print('id(2) =', id(a))
+
+a = a+1
+print('id(a) =', id(a))
+
+print('id(3) =', id(3))
+
+b = 2
+print('id(b) =', id(b))
+print('id(2) =', id(2))
+
+a = 5 
+a = 'Hello World!'
+a = [1,2,3]
+def printHello():
+  print("Hello")
+
+a = printHello
+
+a()
+
+def outer_function():
+  b = 34 
+  def inner_function():
+    c = 42
+  
+  a = 20
+
+def outer_function():
+    
+  a=34
+
+  def inner_function():
+      a=20
+      print('a = ', a)
+    
+  inner_function()
+  print('a = ', a)
+
+a=20
+outer_function()
+print('a = ', a)
