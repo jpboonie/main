@@ -1,3 +1,3 @@
-from day1 import *
+from questions import *
 
-from day2 import *
+#from day2 import *
