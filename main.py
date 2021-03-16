@@ -147,6 +147,7 @@ words = {}
 words["US"] = "United States" 
 words["UK"] = "United Kingdom" 
 words["AUS"] = "Australia" 
+
 for key, value in words.items():  
   print(key + " = " + value) 
 
@@ -197,3 +198,46 @@ def outer_function():
 a=20
 outer_function()
 print('a = ', a)
+
+def identity(x):
+  return x
+
+x= (lambda x: x + 1)(2)
+print(x)
+
+x= lambda a: a + a+20
+print(x(5))
+
+x= lambda a,b,c : a+b+c
+print(x(5,4,2))
+
+def myfunc(m):
+  return lambda a : a * m
+
+mydouble = myfunc(2)
+print(mydouble(10))
+
+b = 200
+a = 20
+
+if b > a:
+  print("b greater than a")
+
+class Account:
+  def __init__(self, account_name, balance=0):
+    self.account_name = account_name
+    self.balance = balance
+
+  def deposit (self, amount):
+    self.balance += amount
+
+def withdraw (self, amount):
+  if amount <= self.balance:
+    self.balance -= amount 
+  else:
+    print('cant withdraw amount as no funds')
+
+myAccount = Account("john", 100)
+
+myAccount.deposit(100)
+print(myAccount.balance)
