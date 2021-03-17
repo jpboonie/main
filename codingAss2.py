@@ -61,6 +61,7 @@ def showNumbers(limit):
 
 showNumbers(8)
 
+#Question 5
 def multiples(limit):
   counter = 0
   sum = 0
