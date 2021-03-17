@@ -139,8 +139,8 @@ print(tomorrow.strftime('%Y-%m-%d %H:%M:%S'))
 name = "John Smith"
 
 print(name.__contains__("John"))
-
-
+hi = range(1, 10, 2)
+print(hi)
 
 #Regex
 # Module Regular Expression is imported using __import__(). 
